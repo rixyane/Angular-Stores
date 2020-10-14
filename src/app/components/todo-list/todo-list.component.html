@@ -1,0 +1,16 @@
+<ul class="todo-list">
+  <li
+    *ngFor="let item of todos$ | async"
+    [ngClass]="{ 'done': item.status === 'done' }"
+  >
+    <input
+      type="checkbox"
+      [checked]="item.status === 'done'"
+      (change)="setItemStatus(item.id, $event.target.checked)"
+    >
+    <span class="desc">{{ item.description }}</span>
+    <button (click)="deleteItem(item.id)">Remove</button>
+  </li>
+</ul>
+
+<app-todo-form class="border-t"></app-todo-form>

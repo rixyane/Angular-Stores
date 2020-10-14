@@ -1,0 +1,25 @@
+body,
+html {
+  font-size: 12pt;
+  font-family: Lato, sans-serif;
+}
+
+* {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+button {
+  min-width: 64px;
+  cursor: pointer;
+}
+
+input {
+  font: inherit;
+}

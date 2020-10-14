@@ -1,0 +1,4 @@
+<form (submit)="addItem()">
+  <input type="text" name="description" [(ngModel)]="todoDescription">
+  <button type="submit" [disabled]="!todoDescription">Add</button>
+</form>
